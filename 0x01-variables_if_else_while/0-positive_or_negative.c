@@ -1,19 +1,34 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
-int main() {
-    int n;
-    srand(time(NULL));
-    n = rand() % 201 - 100; // random number between -100 and 100 inclusive
-    printf("The number %d ", n);
-    if (n > 0) {
-        printf("is positive\n");
-    } else if (n == 0) {
-        printf("is zero\n");
-    } else {
-        printf("is negative\n");
-    }
-    return 0;
-}
+/* more headers goes there */
+/**
+* main - program will assign a random number to the variable n each time
+* Return: 0 is returned
+*/
 
+
+
+int main(void)
+
+{
+
+		int n;
+
+
+
+			srand(time(0));
+
+				n = rand() - RAND_MAX / 2;
+
+					/* your code goes there */
+					if (n > 0)
+						printf("%d is positive\n", n);
+					else if (n == 0)
+						printf("%d is zero\n", n);
+					else
+						printf("%d is negative\n", n);
+					return (0);
+
+}
